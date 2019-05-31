@@ -27,7 +27,7 @@ _LAMBDA_SERVER_PORT=8001 go run ./toupperlambda.go
 Then use this library in tests or wherever you need it, by calling 
 
 ```
-response, err := golambdainvoke.Run(Input{
+response, err := golambdainvoke.Run(golambdainvoke.Input{
     Port:    8001,
     Payload: "payload",
 })
